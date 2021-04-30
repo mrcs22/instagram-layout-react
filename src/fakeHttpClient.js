@@ -21,6 +21,29 @@ const data = {
     { storieImage: "img/wawawiwacomicsa.png", user: "wawawiwacomicsa" },
   ],
 
+  suggestions: [
+    {
+      image: "./img/meowed.png",
+      name: "meowed",
+      subtitle: "Segue você",
+    },
+    {
+      image: "./img/barked.png",
+      name: "barked",
+      subtitle: "Novo no Instagram",
+    },
+    {
+      image: "./img/9gag.png",
+      name: "9gag",
+      subtitle: "Segue você",
+    },
+    {
+      image: "./img/respondeai.png",
+      name: "respondeai",
+      subtitle: "Todo mundo ama",
+    },
+  ],
+
   posts: [
     {
       postContent: {
