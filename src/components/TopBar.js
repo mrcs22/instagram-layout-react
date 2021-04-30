@@ -1,3 +1,5 @@
+import Menu from "./Menu";
+
 export default function TopBar() {
   return (
     <div class="top-bar">
@@ -10,12 +12,10 @@ export default function TopBar() {
           <ion-icon name="search"></ion-icon>
           <input id="search-input" type="text" placeholder="Pesquisar"></input>
         </div>
-        <div class="menu">
-          <ion-icon name="paper-plane-outline"></ion-icon>
-          <ion-icon name="compass-outline"></ion-icon>
-          <ion-icon name="heart-outline"></ion-icon>
-          <ion-icon name="person-outline"></ion-icon>
-        </div>
+        <Menu
+          menuClass="menu"
+          iconNames="paper-plane-outline compass-outline heart-outline person-outline"
+        />
       </div>
     </div>
   );
