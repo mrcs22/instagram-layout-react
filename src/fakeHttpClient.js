@@ -1,4 +1,4 @@
-const fakeApi = {
+const fakeHttpClient = {
   GET: (fakeUrl) => {
     const requestedData = fakeUrl.split("/")[1].replace(".com", "");
 
@@ -93,4 +93,4 @@ const data = {
   ],
 };
 
-export default fakeApi;
+export default fakeHttpClient;

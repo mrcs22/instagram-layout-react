@@ -1,6 +1,7 @@
-import fakeApi from "../fakeApi";
+import Storie from "./Storie";
+import fakeHttpClient from "../fakeHttpClient";
 
-const stories = fakeApi.GET("www.my-fake-something/stories.com");
+const stories = fakeHttpClient.GET("www.my-fake-something/stories.com");
 
 export default function Stories() {
   return (
@@ -10,17 +11,6 @@ export default function Stories() {
       ))}
 
       <ion-icon id="next" name="chevron-forward-circle-sharp"></ion-icon>
-    </div>
-  );
-}
-
-function Storie(props) {
-  return (
-    <div class="storie">
-      <div>
-        <img src={props.storieImage} alt="" />
-      </div>
-      <p>{props.user}</p>
     </div>
   );
 }

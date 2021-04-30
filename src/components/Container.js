@@ -1,8 +1,8 @@
 import Stories from "./Stories";
 import Post from "./Post";
 
-import fakeApi from "../fakeApi";
-const posts = fakeApi.GET("www.my-fake-something/posts.com");
+import fakeHttpClient from "../fakeHttpClient";
+const posts = fakeHttpClient.GET("www.my-fake-something/posts.com");
 
 export default function Container() {
   return (
